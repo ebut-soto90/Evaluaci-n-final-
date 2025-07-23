@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+</head>
+<body>
+    {% if mensaje %}
+        <h2>{{ mensaje }}</h2>
+    {% else %}
+        <h2>Resumen de Compra</h2>
+        <p>Nombre: {{ nombre }}</p>
+        <p>Total sin descuento: ${{ total }}</p>
+        <p>Total con descuento: ${{ total_desc }}</p>
+    {% endif %}
+    <a href="/">Volver al Menú</a>
+</body>
+</html>
